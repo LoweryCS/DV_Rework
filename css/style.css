@@ -1,0 +1,150 @@
+:root {
+    --primary-color: rgba(227,223,119, 0.75);
+    --overlay-color: rgba(24, 39, 51, 0.85);
+    --menu-speed: 0.75s;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {    
+    margin: 0;
+    padding: 0;     
+    overflow-x: hidden;    
+    font-family: 'Staatliches', cursive;
+}
+
+.background-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(151,235,219);   
+}
+
+/*.background-img .img-paris {
+    
+    
+}*/
+
+.header { 
+    position: fixed;   
+    width: 100vw;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    max-height: 70px;
+    background-color: rgb(2, 2, 2);
+    opacity: 0.87;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.logo {    
+    z-index: 2;       
+}
+
+.logolink {
+    text-decoration: none;
+    display: flex;
+    cursor: pointer;
+}
+
+.logo ul {
+    list-style: none;
+    display: flex; 
+    font-family: 'Staatliches', cursive;   
+}
+
+.logo ul li {
+    font-size: 2.5rem;  
+    letter-spacing: 10px;     
+}
+
+.dap li:nth-child(1) {
+    color: rgb(248, 95, 68);
+}
+.dap li:nth-child(2) {
+    color: rgb(122, 219, 110);
+}
+.dap li:nth-child(3) {
+    color: rgb(250, 234, 95);
+}
+.dap li:nth-child(4) {
+    color: rgb(250, 234, 95);
+}
+.dap li:nth-child(5) {
+    color: rgb(122, 219, 110);
+}
+.dap li:nth-child(6) {
+    color: rgb(171, 112, 206);
+}
+
+.val li:nth-child(1) {
+    color: rgb(171, 112, 206);
+}
+.val li:nth-child(2) {
+    color: rgb(250, 234, 95);
+}
+.val li:nth-child(3) {
+    color: rgb(122, 219, 110);    
+}
+.val li:nth-child(4) {
+    color: rgb(122, 219, 110);
+}
+.val li:nth-child(5) {
+    color: rgb(250, 234, 95);    
+}
+.val li:nth-child(6) {
+    color: rgb(248, 95, 68);    
+}
+
+.right_icons {
+    position: fixed;      
+    display: flex;  
+    color: white;   
+    margin: 0;
+    right: 0;
+    padding: 1rem;    
+}
+
+.right_icons div {
+    margin: 5px 1rem 0 1rem;
+    align-content: center;
+    transition: 0.4s ease;
+}
+
+.right_icons div:hover {
+    border-bottom: 2px solid white;
+    
+}
+
+.search {    
+    width: 30px;
+    height: 40px;     
+}
+
+.login {
+    width: 33px;
+    height: 40px;    
+}
+
+.cart {
+    width: 30px;
+    height: 40px;    
+}
+
+.overlay-menu {
+    position: absolute;
+    background-color: rgb(24, 24, 24);
+    opacity: 0;
+    width: 100%;
+    height: 100vh;
+    margin-top: 70px;    
+    transition: opacity 0.4s ease-in-out;
+}
+
+.head {
+    opacity: 1;
+}
